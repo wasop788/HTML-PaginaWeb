@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "silent_hill";
+    font-weight: lighter;
+}
+@font-face{
+    font-family: "silent_hill";
+    src: url("../Recursos/SLNTHLC.TTF");
+}
+body{
+    background-attachment: fixed;
+    background-image: url("../Recursos/fondo_editado.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/**** COMIENZO HEADER ****/
+header{
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    background-color: black;
+    z-index: 10;
+    /* ESTO POSICIONA AL HEADER POR ENCIMA DEL RESTO DE CAPAS */
+    top: 0;
+}
+
+/** COMIENZO MENU PRINCIPAL **/
+.menu_principal{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+}
+.menu_principal a{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+.titulo{
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-grow: 2;
+}
+.titulo a{
+    font-size: 50px;  
+}
+.titulo a:hover{
+    color: red;  
+}
+.menus{
+    border: 1px solid white;
+    padding-top: 10px;
+    flex-grow: 1;
+}
+.menus a:hover{
+    color: red;
+}
+/** FIN MENU PRINCIPAL **/
+/**** FIN HEADER ****/
+
+/**** COMIENZO MAIN ****/
+.principal{
+    top: 0;
+    height: 630vh;
+    width: 60%;
+    background-color: rgba(0,0,0,0.89);
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/** COMIENZO CABECERA DEL CUERPO **/
+.intro{ 
+    margin: 0 auto;
+    width: 85%;
+    height: 100px;
+    background-color: #1A211E;
+    border: 1px solid white;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    color: #EDBE64;
+    margin-bottom: 75px;
+}
+.intro h1 h2{
+    flex-grow: 1;
+    width: 100%;
+}
+/** FIN CABECERA DEL CUERPO **/
+
+/** COMIENZO CRONOLOGIA **/
+.fechas{
+    color: white;
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+}
+.fechas h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+.fechas ol{
+    list-style-position: inside;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.mega_corto{
+    height: 150px;
+    font-size: 25px;
+    float: left;
+    width: 50%;
+}
+.muy_corto{
+    height: 250px;
+    font-size: 25px;
+    float: left;
+    width: 50%;
+}
+.corto{
+    height: 325px;
+    font-size: 25px;
+    float: left;
+    width: 50%;
+}
+.largo{
+    height: 400px;
+    font-size: 25px;
+    float: left;
+    width: 50%;
+}
+/** FIN CRONOLOGIA **/
+/**** FIN MAIN ****/
+
+/**** COMIENZO FOOTER ****/
+footer{
+    float: inline-start;
+    width: 100%;
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+.footer_contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    height: 100px;
+    width: 100%;
+}
+
+/** COMIENZO IMAGENES **/
+.metatron{
+    background-position: center;
+    background-image: url("../Recursos/metatron.jpg");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    width: 10%;
+    margin: 3px;
+}
+.pegi{
+    width: 10%;
+    background-position: center;
+    background-image: url("../Recursos/pegi\ 18.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 5px;
+}
+/** FIN IMAGENES **/
+
+/** COMIENZO MENU SECUNDARIO **/
+.texto_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+    font-size: 14px;
+    color: white;
+}
+.menu_secundario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    list-style: none;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.menu_secundario li{
+    flex-grow: 1;
+}
+.menu_secundario a{
+    text-decoration: none;
+    color: white;
+}
+.menu_secundario a:hover{
+    color: red;
+}
+/** FIN MENU SECUNDARIO **/
+/**** FIN FOOTER ****/
+
+/**** COMIENZO RESPONSIVE ****/
+/** COMIENZO MOVIL ****/
+@media (max-width: 475px) {
+    .principal{
+        height: 920vh;
+        width: 100%;
+        padding-top: 60px;
+    }
+    .menu_principal a{
+        font-size: 20px;
+    }
+    .menus{
+        padding-top: 5px;
+    }
+    .intro{
+        margin-bottom: 45px;
+    }
+    .fechas h1{
+        margin-bottom: 40px;
+    }
+    .corto{
+        font-size: 20px;
+        height: 400px;
+    }
+    .largo{
+        font-size: 20px;
+        height: 500px;
+    }
+}
+/** FIN MOVIL **/
+
+/** COMIENZO TABLET **/
+@media (min-width: 476px) and (max-width: 768px){
+    .principal{
+        height: 920vh;
+    }
+    .intro{
+        margin-bottom: 50px;
+    }
+    .fechas h1{
+        margin-bottom: 40px;
+    }
+    .corto{
+        font-size: 20px;
+        height: 400px;
+    }
+    .largo{
+        font-size: 20px;
+        height: 500px;
+    }
+}
+/** FIN TABLET **/
+/**** FIN RESPONSIVE ****/

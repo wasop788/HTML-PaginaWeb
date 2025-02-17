@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./CSS/informacion_contacto.css">
+</head>
+<body>
+    <header>
+        <!-- menu principal -->
+        <nav>
+            <ul class="menu_principal">
+                <li class="menus"><a href="./criaturas.html">CRIATURAS</a></li>
+                <li class="menus"><a href="./juegos.html">JUEGOS</a></li>
+                <li class="titulo"><a href="./inicio.html">SILENT HILL</a></li>
+                <li class="menus"><a href="./cronologia.html">CRONOLOGIA</a></li>
+                <li class="menus"><a href="./media.html">MEDIA</a></li>
+            </ul>
+        </nav>
+        <!-- fin menu principal -->
+    </header>
+
+    <main class="principal">
+        <!-- texto -->
+        <div class="texto_formulario">
+        <h1>¡OFERTA DE EMPLEO!</h1>
+        <br>
+        <p>¿Te consideras alguien facil de manipular y que le gusta seguir ordenes?</p>
+        <br>
+        <p>¡Registrate en la orden!</p>
+        </div>
+        <!-- fin texto -->
+
+        <!-- formulario -->
+        <form class="formulario" action="" method="post">
+            <fieldset>
+            <label for="name">Nombre:</label>
+            <input  class="boton" required type="text" id="Nombre" name="Nombre" placeholder="Introduzca su nombre..." height ="20">
+            <br><br>
+            <label for="surname">Apellidos:</label>
+            <input  class="boton" required type="text" id="Apellidos" name="Apellidos" placeholder="Introduzca sus apellidos...">
+            <br><br>
+            <label for="age">Edad:</label>
+            <input  class="boton" min="18" max="100" required type="number" id="Edad" name="Edad" placeholder="Introduzca su edad...">
+            <br><br>
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input  class="boton" required type="date" id="Fecha" name="Fecha">
+            <br><br>
+            <label for="phone">Telefono:</label>
+            <input class="boton" required type="tel" id="Telefono" name="Telefono" placeholder="Ej. 123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+            <br><br>
+            <label for="mail">Email:</label>
+            <input class="boton" type="email" id="CorreoE" name="CorreoE" placeholder="Ej. tucorreoelectronico@gmail.com">
+            <br><br>
+            <p>Por favor indique su genero:</p>
+            <input type="radio" id="gender1" name="gender" value="Hombre">
+            <label for="gender1">Hombre</label>
+            <input type="radio" id="gender2" name="gender" value="Mujer">
+            <label for="gender2">Mujer</label>
+            <input type="radio" id="gender3" name="gender" value="Otro">
+            <label for="gender3">Prefiero no decir</label>
+            <br><br>
+            </fieldset>
+            <br>
+            <label for="opcion1">
+                <input type="checkbox" id="opcion1" name="opciones" value="opcion1" checked>
+                Acepto donar todo mi patrimonio a la Orden
+            </label>
+            <br>
+            <label for="opcion2">
+                <input type="checkbox" id="opcion2" name="opciones" value="opcion2">
+                Acepto a reganadientes donar todo mi patrimonio a la Orden
+            </label>
+            <br><br><br>
+            <input class="boton" type="submit" value="Enviar">
+            </fieldset>
+        </form>
+        <!-- fin formulario --> 
+    </main>
+
+    <footer>
+        <div class="footer_contenido">
+            <!-- imagenes -->
+            <div class="metatron"></div>
+            <!-- fin imagenes -->
+                
+            <nav class="texto_footer">
+                <div class="nombre">
+                    <h1>SILENT HILL</h1>
+                </div>
+
+                <!-- menu secundario -->
+                <ul class="menu_secundario">
+                    <li><a href="./inicio.html">inicio</a></li>
+                    <li>|</li>
+                    <li><a href="./informacion.html">sobre nosotros</a></li>
+                    <li>|</li>
+                    <li><a href="./contacto.html">contacto</a></li>
+                </ul>
+                <!-- fin menu secundario -->
+
+                <div>
+                    <h1>© "silent hill" es una marca registrada de konami digital entertainment</h1>
+                </div>
+            </nav>
+
+            <!-- imagenes -->
+            <div class="pegi"></div>
+            <!-- fin imagenes -->
+        </div>
+    </footer>
+</body>
+</html>

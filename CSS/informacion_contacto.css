@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "silent_hill";
+    font-weight: lighter;
+}
+@font-face{
+    font-family: "silent_hill";
+    src: url("../Recursos/SLNTHLC.TTF");
+}
+body{
+    background-attachment: fixed;
+    background-image: url("../Recursos/fondo_editado.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/**** COMIENZO HEADER ****/
+header{
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    background-color: black;
+    z-index: 10;
+    /* ESTO POSICIONA AL HEADER POR ENCIMA DEL RESTO DE CAPAS */
+    top: 0;
+}
+
+/** COMIENZO MENU PRINCIPAL **/
+.menu_principal{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+}
+.menu_principal a{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+.titulo{
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-grow: 2;
+}
+.titulo a{
+    font-size: 50px;  
+}
+.titulo a:hover{
+    color: red;  
+}
+.menus{
+    border: 1px solid white;
+    padding-top: 10px;
+    flex-grow: 1;
+}
+.menus a:hover{
+    color: red;
+}
+/** FIN MENU PRINCIPAL **/
+/**** FIN HEADER ****/
+
+/**** COMIENZO MAIN ****/
+.principal{
+    top: 0;
+    height: auto;
+    width: 60%;
+    background-color: rgba(0,0,0,0.89);
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/** COMIENZO SOBRE NOSOTROS **/
+.nosotros{
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+}
+.texto_nosotros{
+    color: white;
+    width: 70%;
+    margin-bottom: 70px;
+}
+.texto_nosotros h1{
+    margin-bottom: 70px;
+    font-size: 75px;
+}
+.texto_nosotros p{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.texto_nosotros a{
+    text-decoration: none;
+    color: #EDBE64;
+}
+.texto_nosotros a:hover{
+    color: red;
+}
+.perrito{
+    background-image: url("../Recursos/tumblr_9e9ffb9fed262eccd91ba5bd679decff_157a0412_250.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+/** FIN SOBRE NOSOTROS **/
+
+/** COMIENZO CONTACTO **/
+.texto_formulario{
+    margin: 0 auto;
+    width: 85%;
+    color: white;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+fieldset{
+    padding-top: 50px;
+}
+.formulario{
+    margin: 250px auto 0 auto;
+    width: 85%;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.boton{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    width: 50%;
+}
+/** FIN CONTACTO **/
+/**** FIN MAIN ****/
+
+/**** COMIENZO FOOTER ****/
+footer{
+    width: 100%;
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+.footer_contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    height: 100px;
+    width: 100%;
+}
+
+/** COMIENZO IMAGENES **/
+.metatron{
+    background-position: center;
+    background-image: url("../Recursos/metatron.jpg");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    width: 10%;
+    margin: 3px;
+}
+.pegi{
+    width: 10%;
+    background-position: center;
+    background-image: url("../Recursos/pegi\ 18.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 5px;
+}
+/** FIN IMAGENES **/
+
+/** COMIENZO MENU SECUNDARIO **/
+.texto_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+    font-size: 14px;
+    color: white;
+}
+.menu_secundario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    list-style: none;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.menu_secundario li{
+    flex-grow: 1;
+}
+.menu_secundario a{
+    text-decoration: none;
+    color: white;
+}
+.menu_secundario a:hover{
+    color: red;
+}
+/** FIN MENU SECUNDARIO **/
+/**** FIN FOOTER ****/
+
+/**** COMIENZO RESPONSIVE ****/
+/** COMIENZO MOVIL ****/
+@media (max-width: 475px) {
+    .principal{
+        width: 100%;
+    }
+    .menu_principal a{
+        font-size: 20px;
+    }
+    .menus{
+        padding-top: 5px;
+    }
+    .texto_nosotros h1{
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    .texto_formulario h1{
+        font-size: 60px;
+    }
+    .formulario{
+        font-size: 40px;
+        
+    }
+    fieldset{
+        padding-top: 40px;
+    }
+    .boton{
+        font-size: 30px;
+    }
+}
+/** FIN MOVIL **/
+
+/** COMIENZO TABLET **/
+@media (min-width: 476px) and (max-width: 768px){
+    .principal{
+        padding-top: 150px;
+    }
+    .texto_nosotros h1{
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    .texto_formulario h1{
+        font-size: 60px;
+    }
+    .formulario{
+        font-size: 40px;
+        
+    }
+    fieldset{
+        padding-top: 40px;
+    }
+    .boton{
+        font-size: 30px;
+    }
+}
+/** FIN TABLET **/
+/**** FIN RESPONSIVE ****/

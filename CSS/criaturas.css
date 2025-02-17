@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "silent_hill";
+    font-weight: lighter;
+}
+@font-face{
+    font-family: "silent_hill";
+    src: url("../Recursos/SLNTHLC.TTF");
+}
+body{
+    background-attachment: fixed;
+    background-image: url("../Recursos/fondo_editado.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/**** COMIENZO HEADER ****/
+header{
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    background-color: black;
+    z-index: 10;
+    /* ESTO POSICIONA AL HEADER POR ENCIMA DEL RESTO DE CAPAS */
+    top: 0;
+}
+
+/** COMIENZO MENU PRINCIPAL **/
+.menu_principal{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+}
+.menu_principal a{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+.titulo{
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-grow: 2;
+}
+.titulo a{
+    font-size: 50px;  
+}
+.titulo a:hover{
+    color: red;  
+}
+.menus{
+    border: 1px solid white;
+    padding-top: 10px;
+    flex-grow: 1;
+}
+.menus a:hover{
+    color: red;
+}
+/** FIN MENU PRINCIPAL **/
+/**** FIN HEADER ****/
+
+/**** COMIENZO MAIN ****/
+.principal{
+    top: 0;
+    height: auto;
+    width: 60%;
+    background-color: rgba(0,0,0,0.89);
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/** COMIENZO CABECERA DEL CUERPO **/
+.intro{ 
+    margin: 0 auto;
+    width: 85%;
+    height: 100px;
+    background-color: #1A211E;
+    border: 1px solid white;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    color: #EDBE64;
+    margin-bottom: 75px;
+}
+.intro h1 h2{
+    flex-grow: 1;
+    width: 100%;
+}
+/** FIN CABECERA DEL CUERPO **/
+
+/** COMIENZO TABLA DE MONSTRUOS **/
+.tabla{
+    width: 85%;
+    color: white;
+    margin: 0 auto;
+}
+.tabla h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.tabla table{
+    font-size: 30px;
+    border: white;
+    color: white;
+    margin: 0 auto;
+}
+.tabla th{
+    padding: 10px;
+}
+.tabla a{
+    text-decoration: none;
+    color: white;
+}
+.tabla a:hover{
+    color: red;
+}
+/** FIN TABLA DE MONSTRUOS **/
+
+/** COMIENZO TEXTO DE MONSTRUOS **/
+.criaturas_descripcion{
+    width: 85%;
+    flex-direction: row;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 125px;
+}
+.abstract{
+    background-image: url("../Recursos/Abstractsh2.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.asphyxia{
+    background-image: url("../Recursos/Asphyxia.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.nurse{
+    background-image: url("../Recursos/nurse.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.closer{
+    background-image: url("../Recursos/250px-Closer.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.grey_child{
+    background-image: url("../Recursos/200px-GreyChild.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.mandarin{
+    background-image: url("../Recursos/Mandarin.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.mannequin{
+    background-image: url("../Recursos/Mannequin.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.pendulum{
+    background-image: url("../Recursos/SH3Pendulum.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.pyramid_head{
+    background-image: url("../Recursos/PyramidHead.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.schism{
+    background-image: url("../Recursos/NewSchism.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.twin_victims{
+    background-image: url("../Recursos/216px-Twin_Victims.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.valtiel{
+    background-image: url("../Recursos/Valtiel.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.texto_criaturas{
+    color: white;
+    width: 70%;
+}
+.texto_criaturas h1{
+    margin-bottom: 45px;
+    font-size: 50px;
+}
+.texto_criaturas p{
+    text-align: justify;
+    font-size: 25px;
+}
+/** FIN TEXTO DE MONSTRUOS **/
+/**** FIN MAIN ****/
+
+/**** COMIENZO FOOTER ****/
+footer{
+    width: 100%;
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+.footer_contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    height: 100px;
+    width: 100%;
+}
+
+/** COMIENZO IMAGENES **/
+.metatron{
+    background-position: center;
+    background-image: url("../Recursos/metatron.jpg");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    width: 10%;
+    margin: 3px;
+}
+.pegi{
+    width: 10%;
+    background-position: center;
+    background-image: url("../Recursos/pegi\ 18.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 5px;
+}
+/** FIN IMAGENES **/
+
+/** COMIENZO MENU SECUNDARIO **/
+.texto_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+    font-size: 14px;
+    color: white;
+}
+.menu_secundario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    list-style: none;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.menu_secundario li{
+    flex-grow: 1;
+}
+.menu_secundario a{
+    text-decoration: none;
+    color: white;
+}
+.menu_secundario a:hover{
+    color: red;
+}
+/** FIN MENU SECUNDARIO **/
+/**** FIN FOOTER ****/
+
+/**** COMIENZO RESPONSIVE ****/
+/** COMIENZO MOVIL ****/
+@media (max-width: 475px) {
+    .principal{
+        width: 100%;
+        padding-top: 60px;
+    }
+    .menu_principal a{
+        font-size: 20px;
+    }
+    .menus{
+        padding-top: 5px;
+    }
+    .intro{
+        margin-bottom: 45px;
+    }
+    .criaturas_descripcion{
+        margin-top: 50px;
+    }
+    .texto_criaturas{
+        width: 60%;
+    }
+    .texto_criaturas h1{
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+    .texto_criaturas p{
+        font-size: 20px;
+    }
+    .abstract, .asphyxia, .nurse, .closer, .grey_child, .mandarin, .mannequin, .pendulum, .pyramid_head, .schism, .twin_victims, .valtiel{
+        width: 30%;
+    }
+}
+/** FIN MOVIL **/
+
+/** COMIENZO TABLET **/
+@media (min-width: 476px) and (max-width: 768px){
+    .intro{
+        margin-bottom: 50px;
+    }
+    .criaturas_descripcion{
+        margin-top: 75px;
+    }
+    .texto_criaturas{
+        width: 60%;
+    }
+    .texto_criaturas h1{
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+    .texto_criaturas p{
+        font-size: 20px;
+    }
+    .abstract, .asphyxia, .nurse, .closer, .grey_child, .mandarin, .mannequin, .pendulum, .pyramid_head, .schism, .twin_victims, .valtiel{
+        width: 30%;
+    }
+}
+/** FIN TABLET **/
+/**** FIN RESPONSIVE ****/

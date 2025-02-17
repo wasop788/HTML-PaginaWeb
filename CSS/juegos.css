@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "silent_hill";
+    font-weight: lighter;
+}
+@font-face{
+    font-family: "silent_hill";
+    src: url("../Recursos/SLNTHLC.TTF");
+}
+body{
+    background-attachment: fixed;
+    background-image: url("../Recursos/fondo_editado.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/**** COMIENZO HEADER ****/
+header{
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    background-color: black;
+    z-index: 10;
+    /* ESTO POSICIONA AL HEADER POR ENCIMA DEL RESTO DE CAPAS */
+    top: 0;
+}
+
+/** COMIENZO MENU PRINCIPAL **/
+.menu_principal{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+}
+.menu_principal a{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+.titulo{
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-grow: 2;
+}
+.titulo a{
+    font-size: 50px;  
+}
+.titulo a:hover{
+    color: red;  
+}
+.menus{
+    border: 1px solid white;
+    padding-top: 10px;
+    flex-grow: 1;
+}
+.menus a:hover{
+    color: red;
+}
+/** FIN MENU PRINCIPAL **/
+/**** FIN HEADER ****/
+
+/**** COMIENZO MAIN ****/
+.principal{
+    top: 0;
+    height: auto;
+    width: 60%;
+    background-color: rgba(0,0,0,0.89);
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/** COMIENZO CABECERA DEL CUERPO **/
+.intro{ 
+    margin: 0 auto;
+    width: 85%;
+    height: 100px;
+    background-color: #1A211E;
+    border: 1px solid white;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    color: #EDBE64;
+    margin-bottom: 60px;
+}
+.intro h1 h2{
+    flex-grow: 1;
+    width: 100%;
+}
+/** FIN CABECERA DEL CUERPO **/
+
+/** COMIENZO LISTA DE JUEGOS **/
+.juegos{
+    color: white;
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+}
+.juegos h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 45px;
+}
+.juegos ul{
+    list-style-position: inside;
+    float: left;
+    margin-bottom: 30px;
+}
+.juegos li{
+    margin-bottom: 30px;
+    float: left;
+    width: 33%; 
+}
+.juegos a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+.juegos a:hover{
+    color: red;
+}
+.spin-offs{
+    color: white;
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+}
+.spin-offs h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 45px;
+}
+.spin-offs ul{
+    list-style-position: inside;
+    float: left;
+    margin-bottom: 100px;
+}
+.spin-offs li{
+    margin-bottom: 30px;
+    float: left;
+    width: 33%;   
+}
+.spin-offs a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+.spin-offs a:hover{
+    color: red;
+}
+/** FIN LISTA DE JUEGOS **/
+
+/** COMIENZO TEXTO DE JUEGOS **/
+.juegos_descripcion{
+    width: 85%;
+    flex-direction: row;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+.silent_hill{
+    background-image: url("../Recursos/Silenthillpal.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill2{
+    background-image: url("../Recursos/SH2UK.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill2_remake{
+    background-image: url("../Recursos/silent-hill-2-cover.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill3{
+    background-image: url("../Recursos/SH3_-_Portada_-_PAL.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill4{
+    background-image: url("../Recursos/SH4UK.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_origins{
+    background-image: url("../Recursos/OriginsBoxart.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_homecoming{
+    background-image: url("../Recursos/SHH_UK.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_sm{
+    background-image: url("../Recursos/SM_Pal.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_downpour{
+    background-image: url("../Recursos/Paldownpourcover.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_f{
+    background-image: url("../Recursos/silent_hill_f-108966707-large.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_pn{
+    background-image: url("../Recursos/SHPN.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_arcade{
+    background-image: url("../Recursos/SH_Arcade.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_dx{
+    background-image: url("../Recursos/Dx1.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_escape{
+    background-image: url("../Recursos/SHTE.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_mobile{
+    background-image: url("../Recursos/Silent_Hill_Orphan-144964474-large.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_mobile2{
+    background-image: url("../Recursos/Silent_Hill_Mobile_2.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_mobile3{
+    background-image: url("../Recursos/Mobile3.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_bm{
+    background-image: url("../Recursos/1002075-81gHjvqMImL.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_pachinko{
+    background-image: url("../Recursos/Fuckonami_by_marksmxtv-d95m9s7.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_message{
+    background-image: url("../Recursos/Silent_Hill_The_Short_Message.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.silent_hill_townfall{
+    background-image: url("../Recursos/MV5BZWQzZDk2NjctNTlhYi00Y2QxLTg5YzUtNmIzZGJjYjQ1ZjZkXkEyXkFqcGc@._V1_QL75_UY281_CR11\,0\,190\,281_.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+.texto_juegos{
+    color: white;
+    width: 70%;
+}
+.texto_juegos h1{
+    margin-bottom: 45px;
+    font-size: 50px;
+}
+.texto_juegos p{
+    text-align: justify;
+    font-size: 25px;
+}
+/** FIN TEXTO DE JUEGOS **/
+/**** FIN MAIN ****/
+
+/**** COMIENZO FOOTER ****/
+footer{
+    width: 100%;
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+.footer_contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    height: 100px;
+    width: 100%;
+}
+
+/** COMIENZO IMAGENES **/
+.metatron{
+    background-position: center;
+    background-image: url("../Recursos/metatron.jpg");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    width: 10%;
+    margin: 3px;
+}
+.pegi{
+    width: 10%;
+    background-position: center;
+    background-image: url("../Recursos/pegi\ 18.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 5px;
+}
+/** FIN IMAGENES **/
+
+/** COMIENZO MENU SECUNDARIO **/
+.texto_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+    font-size: 14px;
+    color: white;
+}
+.menu_secundario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    list-style: none;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.menu_secundario li{
+    flex-grow: 1;
+}
+.menu_secundario a{
+    text-decoration: none;
+    color: white;
+}
+.menu_secundario a:hover{
+    color: red;
+}
+/** FIN MENU SECUNDARIO **/
+/**** FIN FOOTER ****/
+
+/**** COMIENZO RESPONSIVE ****/
+/** COMIENZO MOVIL ****/
+@media (max-width: 475px) {
+    .principal{
+        width: 100%;
+        padding-top: 60px;
+    }
+    .menu_principal a{
+        font-size: 20px;
+    }
+    .menus{
+        padding-top: 5px;
+    }
+    .intro{
+        margin-bottom: 45px;
+    }
+    .spin-offs ul{
+        margin-bottom: 40px;
+    }
+    .juegos_descripcion{
+        margin-top: 50px;
+    }
+    .texto_juegos{
+        width: 60%;
+    }
+    .texto_juegos h1{
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+    .texto_juegos p{
+        font-size: 20px;
+    }
+    .silent_hill, .silent_hill2, .silent_hill2_remake, .silent_hill3, .silent_hill4, .silent_hill_origins, .silent_hill_homecoming, .silent_hill_sm, .silent_hill_downpour, .silent_hill_f, .silent_hill_pn, .silent_hill_arcade, .silent_hill_dx, .silent_hill_escape, .silent_hill_mobile, .silent_hill_mobile2, .silent_hill_mobile3, .silent_hill_bm, .silent_hill_pachinko, .silent_hill_message, .silent_hill_townfall{
+        width: 30%;
+    }
+}
+/** FIN MOVIL **/
+
+/** COMIENZO TABLET **/
+@media (min-width: 476px) and (max-width: 768px){
+    .intro{
+        margin-bottom: 50px;
+    }
+    .spin-offs ul{
+        margin-bottom: 40px;
+    }
+    .juegos_descripcion{
+        margin-top: 75px;
+    }
+    .texto_juegos{
+        width: 60%;
+    }
+    .texto_juegos h1{
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+    .texto_juegos p{
+        font-size: 20px;
+    }
+    .silent_hill, .silent_hill2, .silent_hill2_remake, .silent_hill3, .silent_hill4, .silent_hill_origins, .silent_hill_homecoming, .silent_hill_sm, .silent_hill_downpour, .silent_hill_f, .silent_hill_pn, .silent_hill_arcade, .silent_hill_dx, .silent_hill_escape, .silent_hill_mobile, .silent_hill_mobile2, .silent_hill_mobile3, .silent_hill_bm, .silent_hill_pachinko, .silent_hill_message, .silent_hill_townfall{
+        width: 30%;
+    }
+}
+/** FIN TABLET **/
+/**** FIN RESPONSIVE ****/

@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "silent_hill";
+    font-weight: lighter;
+}
+@font-face{
+    font-family: "silent_hill";
+    src: url("../Recursos/SLNTHLC.TTF");
+}
+body{
+    background-attachment: fixed;
+    background-image: url("../Recursos/fondo_editado.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/**** COMIENZO HEADER ****/
+header{
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    background-color: black;
+    z-index: 10;
+    /* ESTO POSICIONA AL HEADER POR ENCIMA DEL RESTO DE CAPAS */
+    top: 0;
+}
+
+/** COMIENZO MENU PRINCIPAL **/
+.menu_principal{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+}
+.menu_principal a{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+.titulo{
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-grow: 2;
+}
+.titulo a{
+    font-size: 50px;  
+}
+.titulo a:hover{
+    color: red;  
+}
+.menus{
+    border: 1px solid white;
+    padding-top: 10px;
+    flex-grow: 1;
+}
+.menus a:hover{
+    color: red;
+}
+/** FIN MENU PRINCIPAL **/
+/**** FIN HEADER ****/
+
+/**** COMIENZO MAIN ****/
+.principal{
+    top: 0;
+    height: 160vh;
+    width: 60%;
+    background-color: rgba(0,0,0,0.89);
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+/** COMIENZO CABECERA DEL CUERPO **/
+.intro{ 
+    margin: 0 auto;
+    width: 85%;
+    height: 100px;
+    background-color: #1A211E;
+    border: 1px solid white;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    color: #EDBE64;
+    margin-bottom: 45px;
+}
+.intro h1 h2{
+    flex-grow: 1;
+    width: 100%;
+}
+/** FIN CABECERA DEL CUERPO **/
+
+/** INICIO **/
+/** COMIENZO CUERPO **/
+.cuerpo{
+    width: 85%;
+    flex-direction: row;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 35px
+}
+.cuerpo aside{
+    margin-left: 25px;
+    width: 25%;
+}
+/** FIN CUERPO **/
+
+/** COMIENZO ASIDE**/
+.arriba{
+    border: 3px solid grey;;
+    padding-top: 10px;
+    background: gray;
+    text-align: center;
+    color: white;
+    height: 30px;
+    font-size: 13px;
+}
+.abajo{
+    border: 3px solid grey;
+    text-align: center;
+    color: white;
+    height: 242px;
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fila{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+.imagen_lanzamiento1{
+    margin-right: 5px;
+    margin-left: 5px;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../Recursos/sh2_remake.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+.imagen_lanzamiento2{
+    margin-right: 5px;
+    margin-left: 5px;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../Recursos/return_to_sh.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+.imagen_lanzamiento3{
+    margin-right: 5px;
+    margin-left: 5px;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../Recursos/sh_townfall.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+.imagen_lanzamiento4{
+    margin-right: 5px;
+    margin-left: 5px;
+    flex-direction: column;
+    background-image: url("../Recursos/shf.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+.texto_lanzamiento{
+    font-size: 15px;
+    margin-right: 3px;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+/** FIN ASIDE **/
+
+/** TEXTO INICIO**/
+.descripcion_inicio{
+    width: 85%;
+    color: white;
+    margin: 100px auto;
+}
+.descripcion_inicio h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.descripcion_inicio p{
+    text-align: justify;
+    font-size: 30px;
+}
+/** FIN TEXTO INICIO**/
+/**** FIN MAIN ****/
+
+/**** COMIENZO FOOTER ****/
+footer{
+    width: 100%;
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+.footer_contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    height: 100px;
+    width: 100%;
+}
+
+/** COMIENZO IMAGENES **/
+.metatron{
+    background-position: center;
+    background-image: url("../Recursos/metatron.jpg");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    width: 10%;
+    margin: 3px;
+}
+.pegi{
+    width: 10%;
+    background-position: center;
+    background-image: url("../Recursos/pegi\ 18.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 5px;
+}
+/** FIN IMAGENES **/
+
+/** COMIENZO MENU SECUNDARIO **/
+.texto_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+    font-size: 14px;
+    color: white;
+}
+.menu_secundario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    list-style: none;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.menu_secundario li{
+    flex-grow: 1;
+}
+.menu_secundario a{
+    text-decoration: none;
+    color: white;
+}
+.menu_secundario a:hover{
+    color: red;
+}
+/** FIN MENU SECUNDARIO **/
+/**** FIN FOOTER ****/
+
+/**** COMIENZO RESPONSIVE ****/
+/** COMIENZO MOVIL ****/
+@media (max-width: 475px) {
+    .principal{
+        height: 310vh;
+        width: 100%;
+        padding-top: 60px;
+    }
+    .menu_principal a{
+        font-size: 20px;
+    }
+    .menus{
+        padding-top: 5px;
+    }
+    .cuerpo{
+        flex-direction: column;
+    }
+    .intro{
+        margin-bottom: 20px;
+    }
+    .cuerpo iframe{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .cuerpo aside{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .abajo{
+        height: 400px;
+        padding-left: 10px;
+    }
+    .fila{
+        height: 20%;
+    }
+    .imagen_lanzamiento1, .imagen_lanzamiento2, .imagen_lanzamiento3, .imagen_lanzamiento4{
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30%;
+    }
+    .texto_lanzamiento{
+        font-size: 40px;
+        width: 70%;
+    }
+    .descripcion_inicio{
+        margin-top: 50px;
+    }
+    .descripcion_inicio h1{
+        margin-bottom: 20px;
+    }
+}
+/** FIN MOVIL **/
+
+/** COMIENZO TABLET **/
+@media (min-width: 476px) and (max-width: 768px){
+    .principal{
+        height: 310vh;
+    }
+    .intro{
+        margin-bottom: 20px;
+    }
+    .cuerpo{
+        flex-direction: column;
+    }
+    .cuerpo iframe{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .cuerpo aside{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .abajo{
+        height: 400px;
+        padding-left: 10px;
+    }
+    .fila{
+        height: 20%;
+    }
+    .imagen_lanzamiento1, .imagen_lanzamiento2, .imagen_lanzamiento3, .imagen_lanzamiento4{
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30%;
+    }
+    .descripcion_inicio{
+        margin-top: 50px;
+    }
+    .descripcion_inicio h1{
+        margin-bottom: 25px;
+    }
+    .texto_lanzamiento{
+        font-size: 40px;
+        width: 70%;
+    }
+}
+/** FIN TABLET **/
+/**** FIN RESPONSIVE ****/
